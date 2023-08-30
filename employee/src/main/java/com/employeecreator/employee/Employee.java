@@ -2,29 +2,42 @@ package com.employeecreator.employee;
 
 import java.sql.Date;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import lombok.RequiredArgsConstructor;
 import jakarta.persistence.GenerationType;
 
 @Entity
+@Table(name = "employees")
+@RequiredArgsConstructor
 public class Employee {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   public Long id;
+  @Column(nullable = false)
   public String firstName;
+  @Column(nullable = false)
   public String lastName;
+  @Column(nullable = false, unique = true)
   public String email;
+  @Column(nullable = true, unique = true)
   public Long mobile;
+  @Column(nullable = true)
   public String address;
+  @Column(nullable = false)
   public Date startDate;
+  @Column(nullable = true)
   public Date endDate;
+  @Column(nullable = true)
   public String contractType;
+  @Column(nullable = false)
   public String contract;
+  @Column(nullable = true)
   public byte hours;
-
-  Employee() {
-  }
 
   Employee(String firstName, String lastName, String email, Long mobile, String address, Date startDate,
       Date endDate, String contractType, String contract, byte hours) {
