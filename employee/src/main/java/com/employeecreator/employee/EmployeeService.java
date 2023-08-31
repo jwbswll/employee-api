@@ -14,8 +14,9 @@ public class EmployeeService {
   @Autowired
   private ModelMapper mapper;
 
-  EmployeeService(EmployeeRepository repo) {
+  EmployeeService(EmployeeRepository repo, ModelMapper mapper) {
     this.repo = repo;
+    this.mapper = mapper;
   }
 
   public List<Employee> getAll() {

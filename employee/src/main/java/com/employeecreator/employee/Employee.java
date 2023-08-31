@@ -7,7 +7,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.Email;
 import lombok.RequiredArgsConstructor;
 import jakarta.persistence.GenerationType;
 
@@ -18,25 +17,25 @@ public class Employee {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   public Long id;
-  @Column(nullable = false)
+  @Column(name = "first_name", nullable = false)
   public String firstName;
-  @Column(nullable = false)
+  @Column(name = "last_name", nullable = false)
   public String lastName;
-  @Column(nullable = false, unique = true)
+  @Column(name = "email", nullable = false, unique = true)
   public String email;
-  @Column(nullable = true, unique = true)
+  @Column(name = "mobile", nullable = true, unique = true)
   public Long mobile;
-  @Column(nullable = true)
+  @Column(name = "address", nullable = true)
   public String address;
-  @Column(nullable = false)
+  @Column(name = "start_date", nullable = false)
   public Date startDate;
-  @Column(nullable = true)
+  @Column(name = "end_date", nullable = true)
   public Date endDate;
-  @Column(nullable = true)
+  @Column(name = "contract_type", nullable = true)
   public String contractType;
-  @Column(nullable = false)
+  @Column(name = "contract", nullable = false)
   public String contract;
-  @Column(nullable = true)
+  @Column(name = "hours", nullable = true)
   public byte hours;
 
   Employee(String firstName, String lastName, String email, Long mobile, String address, Date startDate,

@@ -1,10 +1,10 @@
 package com.employeecreator.employee;
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.lang.Nullable;
 
+import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -34,6 +34,10 @@ public class CreateEmployeeDTO {
   public String contract;
   @Nullable
   public byte hours;
+
+  CreateEmployeeDTO(String firstName, String lastName, String email, Date startDate, String contractType,
+      String contract) {
+  }
 
   @Override
   public String toString() {
