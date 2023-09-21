@@ -62,8 +62,9 @@ public class EmployeeController {
   ResponseEntity<String> deleteById(@PathVariable("id") Long id) {
     boolean result = this.service.deleteById(id);
     if (!result) {
-      throw new NotFoundException("Employee with id: " + id + " does not exist, could not delete");
+      return new ResponseEntity<String>("Employee with id: " + id + " does not exist, could not delete",
+          HttpStatus.NOT_FOUND);
     }
-    return new ResponseEntity<String>("Employee with id: " + id + " successfully deleted", null, HttpStatus.OK);
+    return new ResponseEntity<String>("Employee with id: " + id + " successfully deleted", HttpStatus.OK);
   }
 }

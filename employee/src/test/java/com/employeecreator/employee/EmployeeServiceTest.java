@@ -15,6 +15,8 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -29,6 +31,7 @@ public class EmployeeServiceTest {
   private ModelMapper mapper;
   @Autowired
   @InjectMocks
+  @MockBean
   private EmployeeService underTest;
 
   @Test

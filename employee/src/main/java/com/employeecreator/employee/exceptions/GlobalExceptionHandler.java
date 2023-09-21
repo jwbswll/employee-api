@@ -1,5 +1,6 @@
 package com.employeecreator.employee.exceptions;
 
+import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,8 +15,9 @@ public class GlobalExceptionHandler {
   }
 
   @ExceptionHandler(DataIntegrityViolationException.class)
-  public ResponseEntity<String> handleDataIntegrityVoilationException(DataIntegrityViolationException ex) {
-    return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+  public ResponseEntity<String> handleDataIntegrityViolationException(DataIntegrityViolationException ex) {
+    ConstraintViolationException cause = (ConstraintViolationException) ex.getCause();
+    return new ResponseEntity<>(cause.getConstraintName(), HttpStatus.BAD_REQUEST);
   }
 
 }
