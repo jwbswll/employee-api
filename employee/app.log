@@ -1,761 +1,315 @@
-2023-09-21 10:36:15,785 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 40446 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 10:36:15,790 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 10:36:16,448 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 10:36:16,448 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 10:36:16,479 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 10:36:16,554 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 10:36:16,581 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-21 10:36:16,584 INFO org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
-2023-09-21 10:36:16,649 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:36:16,748 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2023-09-21 10:36:17,072 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@512f3c19
-2023-09-21 10:36:17,073 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2023-09-21 10:36:17,231 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:36:17,526 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 10:36:17,944 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 2.359 seconds (process running for 2.734)
-2023-09-21 10:38:11,738 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 10:41:15,304 INFO org.apache.catalina.core.StandardService [Thread-5] Stopping service [Tomcat]
-2023-09-21 10:41:15,307 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 10:41:15,319 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
-2023-09-21 10:41:15,339 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
-2023-09-21 10:41:15,397 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 40446 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 10:41:15,397 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 10:41:15,525 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 10:41:15,525 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 10:41:15,531 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 10:41:15,546 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 10:41:15,548 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:41:15,549 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
-2023-09-21 10:41:15,613 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37df2345
-2023-09-21 10:41:15,613 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
-2023-09-21 10:41:15,618 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:41:15,637 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 10:41:15,744 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.36 seconds (process running for 300.542)
-2023-09-21 10:41:18,894 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 10:46:29,188 INFO org.apache.catalina.core.StandardService [Thread-7] Stopping service [Tomcat]
-2023-09-21 10:46:29,191 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-7] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 10:46:29,200 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
-2023-09-21 10:46:29,235 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
-2023-09-21 10:46:29,291 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 40446 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 10:46:29,291 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 10:46:29,417 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 10:46:29,417 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 10:46:29,440 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 10:46:29,469 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 10:46:29,473 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:46:29,474 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
-2023-09-21 10:46:29,498 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65289875
-2023-09-21 10:46:29,498 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
-2023-09-21 10:46:29,502 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:46:29,522 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 10:46:29,609 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.328 seconds (process running for 614.415)
-2023-09-21 10:46:33,425 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 10:47:40,774 INFO org.apache.catalina.core.StandardService [Thread-11] Stopping service [Tomcat]
-2023-09-21 10:47:40,776 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-11] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 10:47:40,800 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
-2023-09-21 10:47:40,810 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
-2023-09-21 10:47:40,870 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 40446 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 10:47:40,870 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 10:47:40,960 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 10:47:40,960 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 10:47:40,966 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 10:47:40,978 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 10:47:40,979 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:47:40,980 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
-2023-09-21 10:47:40,988 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c22d05a
-2023-09-21 10:47:40,988 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
-2023-09-21 10:47:40,993 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:47:41,008 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 10:47:41,080 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.219 seconds (process running for 685.888)
-2023-09-21 10:47:49,327 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 10:52:31,060 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-4 - Shutdown initiated...
-2023-09-21 10:52:31,076 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-4 - Shutdown completed.
-2023-09-21 10:52:31,990 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 10:52:31,991 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 10:52:32,646 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 10:52:32,647 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 10:52:32,677 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 10:52:32,749 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 10:52:32,775 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-21 10:52:32,776 INFO org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
-2023-09-21 10:52:32,834 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:52:32,908 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2023-09-21 10:52:33,118 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72210de6
-2023-09-21 10:52:33,119 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2023-09-21 10:52:33,223 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 10:52:33,511 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 10:52:33,827 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 2.04 seconds (process running for 2.273)
-2023-09-21 10:52:38,129 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:02:35,188 INFO org.apache.catalina.core.StandardService [Thread-5] Stopping service [Tomcat]
-2023-09-21 11:02:35,192 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:02:35,206 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
-2023-09-21 11:02:35,239 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
-2023-09-21 11:02:35,303 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:02:35,303 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:02:35,437 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:02:35,438 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:02:35,444 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:02:35,461 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:02:35,463 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:02:35,463 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
-2023-09-21 11:02:35,495 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3321155
-2023-09-21 11:02:35,495 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
-2023-09-21 11:02:35,500 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:02:35,520 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:02:35,634 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.347 seconds (process running for 604.115)
-2023-09-21 11:02:39,069 INFO org.apache.catalina.core.StandardService [Thread-7] Stopping service [Tomcat]
-2023-09-21 11:02:39,075 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
-2023-09-21 11:02:39,078 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
-2023-09-21 11:02:39,129 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:02:39,129 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:02:39,216 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:02:39,216 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:02:39,221 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:02:39,234 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:02:39,236 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:02:39,236 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
-2023-09-21 11:02:39,245 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1485a86c
-2023-09-21 11:02:39,245 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
-2023-09-21 11:02:39,249 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:02:39,266 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:02:39,333 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.216 seconds (process running for 607.815)
-2023-09-21 11:02:43,783 INFO org.apache.catalina.core.StandardService [Thread-11] Stopping service [Tomcat]
-2023-09-21 11:02:43,786 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
-2023-09-21 11:02:43,787 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
-2023-09-21 11:02:43,820 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:02:43,820 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:02:43,896 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:02:43,896 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:02:43,904 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:02:43,925 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:02:43,927 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:02:43,927 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
-2023-09-21 11:02:43,942 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28cd9989
-2023-09-21 11:02:43,943 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
-2023-09-21 11:02:43,946 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:02:43,962 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:02:44,018 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.206 seconds (process running for 612.5)
-2023-09-21 11:02:50,655 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:14:37,431 INFO org.apache.catalina.core.StandardService [Thread-15] Stopping service [Tomcat]
-2023-09-21 11:14:37,433 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-15] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:14:37,446 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-4 - Shutdown initiated...
-2023-09-21 11:14:37,472 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-4 - Shutdown completed.
-2023-09-21 11:14:37,527 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:14:37,527 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:14:37,630 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:14:37,630 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:14:37,635 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:14:37,656 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:14:37,658 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:14:37,659 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
-2023-09-21 11:14:37,679 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2927dc4c
-2023-09-21 11:14:37,680 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
-2023-09-21 11:14:37,684 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:14:37,698 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:14:37,766 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.247 seconds (process running for 1326.271)
-2023-09-21 11:14:49,149 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:14:49,231 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:14:49,231 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:15:12,926 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:15:12,927 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:15:16,222 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:15:16,222 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:17:05,668 INFO org.apache.catalina.core.StandardService [Thread-19] Stopping service [Tomcat]
-2023-09-21 11:17:05,669 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-19] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:17:05,686 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] HikariPool-5 - Shutdown initiated...
-2023-09-21 11:17:05,700 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] HikariPool-5 - Shutdown completed.
-2023-09-21 11:17:05,757 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:17:05,757 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:17:05,843 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:17:05,843 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:17:05,849 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:17:05,860 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:17:05,862 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:17:05,862 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Starting...
-2023-09-21 11:17:05,880 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7125c9b7
-2023-09-21 11:17:05,881 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
-2023-09-21 11:17:05,884 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:17:05,899 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:17:05,970 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.222 seconds (process running for 1474.48)
-2023-09-21 11:17:31,613 INFO org.apache.catalina.core.StandardService [Thread-23] Stopping service [Tomcat]
-2023-09-21 11:17:31,620 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] HikariPool-6 - Shutdown initiated...
-2023-09-21 11:17:31,623 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] HikariPool-6 - Shutdown completed.
-2023-09-21 11:17:31,678 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:17:31,678 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:17:31,749 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:17:31,749 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:17:31,754 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:17:31,763 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:17:31,764 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:17:31,764 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Starting...
-2023-09-21 11:17:31,771 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21691531
-2023-09-21 11:17:31,771 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Start completed.
-2023-09-21 11:17:31,775 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:17:31,789 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:17:31,838 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.17 seconds (process running for 1500.348)
-2023-09-21 11:17:34,265 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:17:34,301 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:17:34,301 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:17:48,770 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:17:48,771 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] Duplicate entry '612346536578' for key 'employees.UK_sm5olvg1ctp19dcrvbr755pi5'
-2023-09-21 11:18:25,774 INFO org.apache.catalina.core.StandardService [Thread-27] Stopping service [Tomcat]
-2023-09-21 11:18:25,775 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-27] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:18:25,782 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] HikariPool-7 - Shutdown initiated...
-2023-09-21 11:18:25,802 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] HikariPool-7 - Shutdown completed.
-2023-09-21 11:18:25,851 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:18:25,852 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:18:25,934 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:18:25,934 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:18:25,939 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:18:25,951 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:18:25,952 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:18:25,953 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Starting...
-2023-09-21 11:18:25,961 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cc8b45f
-2023-09-21 11:18:25,961 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Start completed.
-2023-09-21 11:18:25,966 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:18:25,980 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:18:26,039 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.196 seconds (process running for 1554.551)
-2023-09-21 11:18:43,619 INFO org.apache.catalina.core.StandardService [Thread-31] Stopping service [Tomcat]
-2023-09-21 11:18:43,623 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] HikariPool-8 - Shutdown initiated...
-2023-09-21 11:18:43,626 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] HikariPool-8 - Shutdown completed.
-2023-09-21 11:18:43,674 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:18:43,675 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:18:43,748 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:18:43,748 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:18:43,752 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:18:43,760 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:18:43,761 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:18:43,762 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Starting...
-2023-09-21 11:18:43,770 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@504319b0
-2023-09-21 11:18:43,770 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Start completed.
-2023-09-21 11:18:43,773 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:18:43,784 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:18:43,833 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.167 seconds (process running for 1572.345)
-2023-09-21 11:18:45,935 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:19:39,764 INFO org.apache.catalina.core.StandardService [Thread-35] Stopping service [Tomcat]
-2023-09-21 11:19:39,766 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-35] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:19:39,771 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] HikariPool-9 - Shutdown initiated...
-2023-09-21 11:19:39,789 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] HikariPool-9 - Shutdown completed.
-2023-09-21 11:19:39,841 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:19:39,841 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:19:39,926 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:19:39,926 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:19:39,931 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:19:39,941 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:19:39,943 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:19:39,943 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Starting...
-2023-09-21 11:19:39,952 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68ea599c
-2023-09-21 11:19:39,952 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Start completed.
-2023-09-21 11:19:39,956 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:19:39,968 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:19:40,024 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.191 seconds (process running for 1628.538)
-2023-09-21 11:19:41,274 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:19:50,881 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:19:50,881 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:20:35,969 INFO org.apache.catalina.core.StandardService [Thread-39] Stopping service [Tomcat]
-2023-09-21 11:20:35,971 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-39] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:20:35,979 INFO com.zaxxer.hikari.HikariDataSource [Thread-39] HikariPool-10 - Shutdown initiated...
-2023-09-21 11:20:36,007 INFO com.zaxxer.hikari.HikariDataSource [Thread-39] HikariPool-10 - Shutdown completed.
-2023-09-21 11:20:36,092 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:20:36,093 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:20:36,182 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:20:36,182 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:20:36,187 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:20:36,196 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:20:36,198 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:20:36,198 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Starting...
-2023-09-21 11:20:36,207 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7285b48b
-2023-09-21 11:20:36,207 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Start completed.
-2023-09-21 11:20:36,212 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:20:36,227 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:20:36,281 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.205 seconds (process running for 1684.797)
-2023-09-21 11:20:39,719 INFO org.apache.catalina.core.StandardService [Thread-43] Stopping service [Tomcat]
-2023-09-21 11:20:39,723 INFO com.zaxxer.hikari.HikariDataSource [Thread-43] HikariPool-11 - Shutdown initiated...
-2023-09-21 11:20:39,725 INFO com.zaxxer.hikari.HikariDataSource [Thread-43] HikariPool-11 - Shutdown completed.
-2023-09-21 11:20:39,763 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:20:39,764 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:20:39,828 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:20:39,828 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:20:39,832 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:20:39,842 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:20:39,843 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:20:39,844 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-12 - Starting...
-2023-09-21 11:20:39,850 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73e7232b
-2023-09-21 11:20:39,851 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-12 - Start completed.
-2023-09-21 11:20:39,854 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:20:39,864 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:20:39,911 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.156 seconds (process running for 1688.427)
-2023-09-21 11:20:42,526 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:20:42,572 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:20:42,572 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:22:18,317 INFO org.apache.catalina.core.StandardService [Thread-47] Stopping service [Tomcat]
-2023-09-21 11:22:18,320 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-47] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:22:18,329 INFO com.zaxxer.hikari.HikariDataSource [Thread-47] HikariPool-12 - Shutdown initiated...
-2023-09-21 11:22:18,355 INFO com.zaxxer.hikari.HikariDataSource [Thread-47] HikariPool-12 - Shutdown completed.
-2023-09-21 11:22:18,413 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:22:18,413 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:22:18,495 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:22:18,495 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:22:18,500 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:22:18,512 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:22:18,517 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:22:18,517 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-13 - Starting...
-2023-09-21 11:22:18,532 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a96e2cd
-2023-09-21 11:22:18,532 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-13 - Start completed.
-2023-09-21 11:22:18,536 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:22:18,546 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:22:18,596 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.19 seconds (process running for 1787.116)
-2023-09-21 11:22:19,971 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:22:20,028 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:22:20,028 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:28:28,644 INFO org.apache.catalina.core.StandardService [Thread-51] Stopping service [Tomcat]
-2023-09-21 11:28:28,647 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-51] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:28:28,657 INFO com.zaxxer.hikari.HikariDataSource [Thread-51] HikariPool-13 - Shutdown initiated...
-2023-09-21 11:28:28,664 INFO com.zaxxer.hikari.HikariDataSource [Thread-51] HikariPool-13 - Shutdown completed.
-2023-09-21 11:28:28,734 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:28:28,734 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:28:28,817 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:28:28,817 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:28:28,821 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:28:28,830 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:28:28,832 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:28:28,833 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-14 - Starting...
-2023-09-21 11:28:28,864 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@339b0192
-2023-09-21 11:28:28,864 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-14 - Start completed.
-2023-09-21 11:28:28,868 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:28:28,879 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:28:28,943 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.217 seconds (process running for 2157.563)
-2023-09-21 11:28:30,660 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:28:30,697 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:28:30,697 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:28:30,700 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'] [update employees set address=?,contract=?,contract_type=?,email=?,end_date=?,first_name=?,hours=?,last_name=?,mobile=?,start_date=? where id=?]; SQL [update employees set address=?,contract=?,contract_type=?,email=?,end_date=?,first_name=?,hours=?,last_name=?,mobile=?,start_date=? where id=?]; constraint [employees.UK_j9xgmd0ya5jmus09o0b8pqrpb]] with root cause
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:108) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:53) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.persister.entity.mutation.UpdateCoordinatorStandard.doStaticUpdate(UpdateCoordinatorStandard.java:745) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.persister.entity.mutation.UpdateCoordinatorStandard.performUpdate(UpdateCoordinatorStandard.java:313) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.persister.entity.mutation.UpdateCoordinatorStandard.coordinateUpdate(UpdateCoordinatorStandard.java:231) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2725) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.action.internal.EntityUpdateAction.execute(EntityUpdateAction.java:166) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:633) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:502) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:358) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1412) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:485) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2301) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1966) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561) ~[spring-orm-6.0.11.jar:6.0.11]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-6.0.11.jar:6.0.11]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-6.0.11.jar:6.0.11]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:660) ~[spring-tx-6.0.11.jar:6.0.11]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:410) ~[spring-tx-6.0.11.jar:6.0.11]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.11.jar:6.0.11]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.11.jar:6.0.11]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.1.2.jar:3.1.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244) ~[spring-aop-6.0.11.jar:6.0.11]
-	at jdk.proxy17/jdk.proxy17.$Proxy178.save(Unknown Source) ~[na:na]
-	at com.employeecreator.employee.EmployeeService.updateById(EmployeeService.java:41) ~[classes/:na]
-	at com.employeecreator.employee.EmployeeController.updateById(EmployeeController.java:54) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.11.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
-	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
-2023-09-21 11:30:18,398 INFO org.apache.catalina.core.StandardService [Thread-55] Stopping service [Tomcat]
-2023-09-21 11:30:18,401 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-55] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:30:18,425 INFO com.zaxxer.hikari.HikariDataSource [Thread-55] HikariPool-14 - Shutdown initiated...
-2023-09-21 11:30:18,450 INFO com.zaxxer.hikari.HikariDataSource [Thread-55] HikariPool-14 - Shutdown completed.
-2023-09-21 11:30:18,556 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:30:18,556 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:30:18,643 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:30:18,643 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:30:18,649 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:30:18,658 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:30:18,659 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:30:18,660 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-15 - Starting...
-2023-09-21 11:30:18,669 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@743e9472
-2023-09-21 11:30:18,669 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-15 - Start completed.
-2023-09-21 11:30:18,672 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:30:18,684 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:30:18,748 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.199 seconds (process running for 2267.374)
-2023-09-21 11:30:20,462 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:30:20,494 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:30:20,494 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:41:08,902 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:41:08,903 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:41:08,905 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:41:08,905 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:43:13,967 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-15 housekeeper] HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=2m25s120ms).
-2023-09-21 11:45:03,608 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-15 housekeeper] HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=1m19s646ms).
-2023-09-21 11:45:28,229 INFO org.apache.catalina.core.StandardService [Thread-59] Stopping service [Tomcat]
-2023-09-21 11:45:28,230 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-59] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:45:28,242 INFO com.zaxxer.hikari.HikariDataSource [Thread-59] HikariPool-15 - Shutdown initiated...
-2023-09-21 11:45:28,278 INFO com.zaxxer.hikari.HikariDataSource [Thread-59] HikariPool-15 - Shutdown completed.
-2023-09-21 11:45:28,348 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:45:28,348 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:45:28,429 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:45:28,429 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:45:28,433 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:45:28,443 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:45:28,445 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:45:28,445 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-16 - Starting...
-2023-09-21 11:45:28,503 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78cc9ea3
-2023-09-21 11:45:28,504 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-16 - Start completed.
-2023-09-21 11:45:28,507 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:45:28,517 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:45:28,591 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.25 seconds (process running for 3012.519)
-2023-09-21 11:45:29,335 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:45:29,364 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:45:29,364 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:46:42,687 INFO org.apache.catalina.core.StandardService [Thread-63] Stopping service [Tomcat]
-2023-09-21 11:46:42,689 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-63] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:46:42,703 INFO com.zaxxer.hikari.HikariDataSource [Thread-63] HikariPool-16 - Shutdown initiated...
-2023-09-21 11:46:42,710 INFO com.zaxxer.hikari.HikariDataSource [Thread-63] HikariPool-16 - Shutdown completed.
-2023-09-21 11:46:42,786 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:46:42,786 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:46:42,857 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:46:42,858 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:46:42,863 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:46:42,872 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:46:42,873 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:46:42,873 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-17 - Starting...
-2023-09-21 11:46:42,883 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8c7e3fc
-2023-09-21 11:46:42,883 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-17 - Start completed.
-2023-09-21 11:46:42,886 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:46:42,896 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:46:42,950 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.172 seconds (process running for 3086.882)
-2023-09-21 11:46:44,389 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:46:44,420 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:46:44,420 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:47:03,568 INFO org.apache.catalina.core.StandardService [Thread-67] Stopping service [Tomcat]
-2023-09-21 11:47:03,569 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-67] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:47:03,583 INFO com.zaxxer.hikari.HikariDataSource [Thread-67] HikariPool-17 - Shutdown initiated...
-2023-09-21 11:47:03,598 INFO com.zaxxer.hikari.HikariDataSource [Thread-67] HikariPool-17 - Shutdown completed.
-2023-09-21 11:47:03,669 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:47:03,669 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:47:03,736 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:47:03,736 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:47:03,741 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:47:03,756 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:47:03,760 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:47:03,761 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-18 - Starting...
-2023-09-21 11:47:03,835 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25fd87a9
-2023-09-21 11:47:03,835 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-18 - Start completed.
-2023-09-21 11:47:03,840 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:47:03,851 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:47:03,908 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.246 seconds (process running for 3107.841)
-2023-09-21 11:47:18,449 INFO org.apache.catalina.core.StandardService [Thread-71] Stopping service [Tomcat]
-2023-09-21 11:47:18,475 INFO com.zaxxer.hikari.HikariDataSource [Thread-71] HikariPool-18 - Shutdown initiated...
-2023-09-21 11:47:18,480 INFO com.zaxxer.hikari.HikariDataSource [Thread-71] HikariPool-18 - Shutdown completed.
-2023-09-21 11:47:18,542 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:47:18,542 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:47:18,610 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:47:18,611 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:47:18,615 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:47:18,631 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:47:18,633 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:47:18,633 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-19 - Starting...
-2023-09-21 11:47:18,642 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e7a70c3
-2023-09-21 11:47:18,642 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-19 - Start completed.
-2023-09-21 11:47:18,646 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:47:18,656 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:47:18,729 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.197 seconds (process running for 3122.663)
-2023-09-21 11:47:18,889 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:47:18,925 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:47:18,925 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:51:51,665 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:51:51,665 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:56:27,618 INFO org.apache.catalina.core.StandardService [Thread-75] Stopping service [Tomcat]
-2023-09-21 11:56:27,620 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-75] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:56:27,631 INFO com.zaxxer.hikari.HikariDataSource [Thread-75] HikariPool-19 - Shutdown initiated...
-2023-09-21 11:56:27,648 INFO com.zaxxer.hikari.HikariDataSource [Thread-75] HikariPool-19 - Shutdown completed.
-2023-09-21 11:56:27,710 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:56:27,710 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:56:27,785 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:56:27,785 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:56:27,789 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:56:27,798 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:56:27,800 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:56:27,800 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-20 - Starting...
-2023-09-21 11:56:27,808 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39422c9c
-2023-09-21 11:56:27,808 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-20 - Start completed.
-2023-09-21 11:56:27,812 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:56:27,821 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:56:27,867 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.164 seconds (process running for 3671.834)
-2023-09-21 11:56:51,502 INFO org.apache.catalina.core.StandardService [Thread-79] Stopping service [Tomcat]
-2023-09-21 11:56:51,513 INFO com.zaxxer.hikari.HikariDataSource [Thread-79] HikariPool-20 - Shutdown initiated...
-2023-09-21 11:56:51,533 INFO com.zaxxer.hikari.HikariDataSource [Thread-79] HikariPool-20 - Shutdown completed.
-2023-09-21 11:56:51,606 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:56:51,606 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:56:51,680 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:56:51,680 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:56:51,685 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:56:51,693 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:56:51,695 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:56:51,696 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-21 - Starting...
-2023-09-21 11:56:51,704 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c0f5820
-2023-09-21 11:56:51,704 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-21 - Start completed.
-2023-09-21 11:56:51,707 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:56:51,717 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:56:51,764 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.164 seconds (process running for 3695.732)
-2023-09-21 11:56:53,726 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 11:56:53,765 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1062, SQLState: 23000
-2023-09-21 11:56:53,765 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 11:57:12,353 INFO org.apache.catalina.core.StandardService [Thread-83] Stopping service [Tomcat]
-2023-09-21 11:57:12,356 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-83] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 11:57:12,366 INFO com.zaxxer.hikari.HikariDataSource [Thread-83] HikariPool-21 - Shutdown initiated...
-2023-09-21 11:57:12,371 INFO com.zaxxer.hikari.HikariDataSource [Thread-83] HikariPool-21 - Shutdown completed.
-2023-09-21 11:57:12,443 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 11:57:12,443 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 11:57:12,515 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 11:57:12,515 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 11:57:12,520 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 11:57:12,535 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 11:57:12,537 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:57:12,537 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-22 - Starting...
-2023-09-21 11:57:12,547 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a85d4c4
-2023-09-21 11:57:12,547 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-22 - Start completed.
-2023-09-21 11:57:12,551 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 11:57:12,559 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 11:57:12,603 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.167 seconds (process running for 3716.573)
-2023-09-21 12:00:48,313 INFO org.apache.catalina.core.StandardService [Thread-87] Stopping service [Tomcat]
-2023-09-21 12:00:48,331 INFO com.zaxxer.hikari.HikariDataSource [Thread-87] HikariPool-22 - Shutdown initiated...
-2023-09-21 12:00:48,375 INFO com.zaxxer.hikari.HikariDataSource [Thread-87] HikariPool-22 - Shutdown completed.
-2023-09-21 12:00:48,454 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 12:00:48,454 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 12:00:48,543 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 12:00:48,543 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 12:00:48,547 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 12:00:48,558 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 12:00:48,559 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:00:48,559 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-23 - Starting...
-2023-09-21 12:00:48,616 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@716215a9
-2023-09-21 12:00:48,616 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-23 - Start completed.
-2023-09-21 12:00:48,621 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:00:48,631 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 12:00:48,711 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.266 seconds (process running for 3932.682)
-2023-09-21 12:01:02,271 INFO org.apache.catalina.core.StandardService [Thread-91] Stopping service [Tomcat]
-2023-09-21 12:01:02,277 INFO com.zaxxer.hikari.HikariDataSource [Thread-91] HikariPool-23 - Shutdown initiated...
-2023-09-21 12:01:02,281 INFO com.zaxxer.hikari.HikariDataSource [Thread-91] HikariPool-23 - Shutdown completed.
-2023-09-21 12:01:02,353 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 12:01:02,353 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 12:01:02,449 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 12:01:02,449 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 12:01:02,454 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 12:01:02,470 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 12:01:02,471 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:01:02,471 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-24 - Starting...
-2023-09-21 12:01:02,479 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-24 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75e2c21
-2023-09-21 12:01:02,479 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-24 - Start completed.
-2023-09-21 12:01:02,483 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:01:02,493 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 12:01:02,541 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.197 seconds (process running for 3946.512)
-2023-09-21 12:01:03,717 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 12:01:03,752 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:01:03,752 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:01:19,104 INFO org.apache.catalina.core.StandardService [Thread-95] Stopping service [Tomcat]
-2023-09-21 12:01:19,106 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-95] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 12:01:19,116 INFO com.zaxxer.hikari.HikariDataSource [Thread-95] HikariPool-24 - Shutdown initiated...
-2023-09-21 12:01:19,136 INFO com.zaxxer.hikari.HikariDataSource [Thread-95] HikariPool-24 - Shutdown completed.
-2023-09-21 12:01:19,213 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 12:01:19,214 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 12:01:19,276 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 12:01:19,276 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 12:01:19,281 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 12:01:19,288 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 12:01:19,290 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:01:19,290 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-25 - Starting...
-2023-09-21 12:01:19,298 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53ba54b2
-2023-09-21 12:01:19,299 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-25 - Start completed.
-2023-09-21 12:01:19,302 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:01:19,310 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 12:01:19,354 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.147 seconds (process running for 3963.325)
-2023-09-21 12:01:20,549 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 12:01:20,574 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:01:20,574 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:01:30,879 INFO org.apache.catalina.core.StandardService [Thread-99] Stopping service [Tomcat]
-2023-09-21 12:01:30,880 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-99] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 12:01:30,903 INFO com.zaxxer.hikari.HikariDataSource [Thread-99] HikariPool-25 - Shutdown initiated...
-2023-09-21 12:01:30,908 INFO com.zaxxer.hikari.HikariDataSource [Thread-99] HikariPool-25 - Shutdown completed.
-2023-09-21 12:01:31,009 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 12:01:31,009 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 12:01:31,078 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 12:01:31,078 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 12:01:31,083 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 12:01:31,091 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 12:01:31,092 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:01:31,093 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-26 - Starting...
-2023-09-21 12:01:31,100 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f321ffa
-2023-09-21 12:01:31,100 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-26 - Start completed.
-2023-09-21 12:01:31,104 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:01:31,112 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 12:01:31,158 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.156 seconds (process running for 3975.13)
-2023-09-21 12:01:32,018 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 12:01:32,061 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:01:32,061 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:04:21,304 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:04:21,305 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] Duplicate entry '612345678' for key 'employees.UK_sm5olvg1ctp19dcrvbr755pi5'
-2023-09-21 12:05:07,781 INFO org.apache.catalina.core.StandardService [Thread-103] Stopping service [Tomcat]
-2023-09-21 12:05:07,784 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-103] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-21 12:05:07,794 INFO com.zaxxer.hikari.HikariDataSource [Thread-103] HikariPool-26 - Shutdown initiated...
-2023-09-21 12:05:07,814 INFO com.zaxxer.hikari.HikariDataSource [Thread-103] HikariPool-26 - Shutdown completed.
-2023-09-21 12:05:07,881 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 41632 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 12:05:07,881 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 12:05:07,951 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 12:05:07,951 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 12:05:07,955 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 12:05:07,964 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 12:05:07,965 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:05:07,965 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-27 - Starting...
-2023-09-21 12:05:07,973 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c8e889e
-2023-09-21 12:05:07,973 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-27 - Start completed.
-2023-09-21 12:05:07,977 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:05:07,986 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 12:05:08,026 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.155 seconds (process running for 4192.009)
-2023-09-21 12:05:09,205 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 12:05:09,254 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:05:09,255 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry '612345678' for key 'employees.UK_sm5olvg1ctp19dcrvbr755pi5'
-2023-09-21 12:06:56,071 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-27 - Shutdown initiated...
-2023-09-21 12:06:56,089 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-27 - Shutdown completed.
-2023-09-21 12:07:04,363 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 44943 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 12:07:04,363 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 12:07:05,020 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 12:07:05,020 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 12:07:05,049 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 12:07:05,118 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 12:07:05,144 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-21 12:07:05,145 INFO org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
-2023-09-21 12:07:05,200 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:07:05,274 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2023-09-21 12:07:05,476 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e008528
-2023-09-21 12:07:05,477 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2023-09-21 12:07:05,581 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:07:05,863 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 12:07:06,230 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 2.083 seconds (process running for 2.337)
-2023-09-21 12:07:28,200 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 12:11:16,048 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-09-21 12:11:16,062 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-09-21 12:11:16,915 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 45969 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
-2023-09-21 12:11:16,916 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2023-09-21 12:11:17,548 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2023-09-21 12:11:17,548 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-21 12:11:17,575 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-09-21 12:11:17,645 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-21 12:11:17,669 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-21 12:11:17,670 INFO org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
-2023-09-21 12:11:17,724 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:11:17,796 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2023-09-21 12:11:17,968 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@643c6f38
-2023-09-21 12:11:17,969 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2023-09-21 12:11:18,070 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
-2023-09-21 12:11:18,349 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-21 12:11:18,674 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 1.942 seconds (process running for 2.138)
-2023-09-21 12:11:22,505 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-21 12:17:06,703 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:17:06,704 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] Duplicate entry 'test1231@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:17:17,690 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:17:17,690 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Duplicate entry '612346536578' for key 'employees.UK_sm5olvg1ctp19dcrvbr755pi5'
-2023-09-21 12:18:04,611 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:18:04,612 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] Duplicate entry 'tesrt2331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:18:04,614 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:18:04,615 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Duplicate entry 'tesrt2331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:18:50,045 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:18:50,046 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] Duplicate entry 'tesrt2331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:18:59,784 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:18:59,785 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:18:59,788 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:18:59,789 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:19:44,368 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:19:44,369 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:25:09,536 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:25:09,537 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:25:09,536 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:25:09,538 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:29:15,881 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m27s708ms).
-2023-09-21 12:41:59,751 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m3s965ms).
-2023-09-21 12:43:34,547 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:43:34,547 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 1062, SQLState: 23000
-2023-09-21 12:43:34,549 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 12:43:34,550 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 13:04:32,390 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m2s562ms).
-2023-09-21 13:56:51,914 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m19s524ms).
-2023-09-21 14:05:49,255 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m27s326ms).
-2023-09-21 14:13:34,341 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] SQL Error: 1062, SQLState: 23000
-2023-09-21 14:13:34,341 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 1062, SQLState: 23000
-2023-09-21 14:13:34,342 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 14:13:34,342 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 14:22:02,316 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m43s14ms).
-2023-09-21 15:14:20,449 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m18s133ms).
-2023-09-21 15:31:53,065 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m32s617ms).
-2023-09-21 15:54:56,198 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m3s130ms).
-2023-09-21 16:29:06,854 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 1062, SQLState: 23000
-2023-09-21 16:29:06,854 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] SQL Error: 1062, SQLState: 23000
-2023-09-21 16:29:06,857 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 16:29:06,857 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] Duplicate entry 'tesrt24331@test1.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
-2023-09-21 16:53:20,801 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m24s269ms).
-2023-09-21 16:57:44,971 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m24s169ms).
-2023-09-21 17:06:38,957 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-09-21 17:06:39,148 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-09-27 09:03:27,488 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 4556 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:03:27,494 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:03:28,635 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:03:28,636 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:03:28,679 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:03:28,783 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:03:28,820 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-09-27 09:03:28,821 INFO org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-09-27 09:03:28,904 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:03:29,013 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-09-27 09:03:29,359 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ff99718
+2023-09-27 09:03:29,360 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-09-27 09:03:29,536 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:03:29,946 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:03:30,432 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 3.248 seconds (process running for 3.705)
+2023-09-27 09:08:13,293 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:13:45,150 INFO org.apache.catalina.core.StandardService [Thread-5] Stopping service [Tomcat]
+2023-09-27 09:13:45,157 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:13:45,187 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-09-27 09:13:45,199 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-09-27 09:13:45,284 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 4556 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:13:45,285 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:13:45,419 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:13:45,420 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:13:45,426 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:13:45,444 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:13:45,446 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:13:45,446 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-09-27 09:13:45,491 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4116feb9
+2023-09-27 09:13:45,491 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-09-27 09:13:45,495 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:13:45,517 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:13:45,629 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.357 seconds (process running for 618.921)
+2023-09-27 09:13:49,060 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:14:19,368 INFO org.apache.catalina.core.StandardService [Thread-7] Stopping service [Tomcat]
+2023-09-27 09:14:19,370 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-7] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:14:19,380 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-09-27 09:14:19,400 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-09-27 09:14:19,465 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 4556 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:14:19,465 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:14:19,566 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:14:19,566 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:14:19,571 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:14:19,585 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:14:19,587 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:14:19,587 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-09-27 09:14:19,612 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@397b546d
+2023-09-27 09:14:19,612 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-09-27 09:14:19,616 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:14:19,633 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:14:19,705 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.256 seconds (process running for 652.999)
+2023-09-27 09:14:20,452 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-3 - Shutdown initiated...
+2023-09-27 09:14:20,458 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-3 - Shutdown completed.
+2023-09-27 09:14:21,354 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:14:21,355 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:14:21,995 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:14:21,996 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:14:22,027 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:14:22,098 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:14:22,127 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-09-27 09:14:22,128 INFO org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-09-27 09:14:22,185 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:14:22,267 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-09-27 09:14:22,493 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@643c6f38
+2023-09-27 09:14:22,494 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-09-27 09:14:22,605 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:14:22,919 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:14:23,292 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 2.133 seconds (process running for 2.373)
+2023-09-27 09:14:26,780 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:17:37,720 INFO org.apache.catalina.core.StandardService [Thread-5] Stopping service [Tomcat]
+2023-09-27 09:17:37,724 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:17:37,741 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-09-27 09:17:37,764 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-09-27 09:17:37,829 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:17:37,830 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:17:37,953 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:17:37,954 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:17:37,959 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:17:37,979 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:17:37,981 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:17:37,981 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-09-27 09:17:38,039 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a5067bb
+2023-09-27 09:17:38,040 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-09-27 09:17:38,044 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:17:38,063 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:17:38,188 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.372 seconds (process running for 197.275)
+2023-09-27 09:17:42,460 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:18:05,885 INFO org.apache.catalina.core.StandardService [Thread-7] Stopping service [Tomcat]
+2023-09-27 09:18:05,888 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-7] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:18:05,899 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-09-27 09:18:05,924 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-09-27 09:18:05,980 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:18:05,980 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:18:06,081 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:18:06,081 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:18:06,086 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:18:06,099 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:18:06,101 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:18:06,102 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-09-27 09:18:06,125 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fbea2ef
+2023-09-27 09:18:06,125 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-09-27 09:18:06,129 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:18:06,146 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:18:06,213 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.246 seconds (process running for 225.301)
+2023-09-27 09:18:22,787 INFO org.apache.catalina.core.StandardService [Thread-11] Stopping service [Tomcat]
+2023-09-27 09:18:22,806 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
+2023-09-27 09:18:22,828 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
+2023-09-27 09:18:22,879 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:18:22,879 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:18:22,980 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:18:22,980 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:18:22,985 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:18:22,996 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:18:22,998 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:18:22,998 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2023-09-27 09:18:23,010 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23eee293
+2023-09-27 09:18:23,010 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2023-09-27 09:18:23,014 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:18:23,030 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:18:23,110 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.241 seconds (process running for 242.199)
+2023-09-27 09:18:31,165 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:20:57,037 INFO org.apache.catalina.core.StandardService [Thread-15] Stopping service [Tomcat]
+2023-09-27 09:20:57,038 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-15] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:20:57,044 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-4 - Shutdown initiated...
+2023-09-27 09:20:57,065 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-4 - Shutdown completed.
+2023-09-27 09:20:57,112 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:20:57,112 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:20:57,213 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:20:57,213 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:20:57,219 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:20:57,231 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:20:57,233 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:20:57,233 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2023-09-27 09:20:57,257 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c1b3b06
+2023-09-27 09:20:57,257 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2023-09-27 09:20:57,261 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:20:57,277 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:20:57,336 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.233 seconds (process running for 396.429)
+2023-09-27 09:21:02,388 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:22:04,393 INFO org.apache.catalina.core.StandardService [Thread-19] Stopping service [Tomcat]
+2023-09-27 09:22:04,395 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-19] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:22:04,402 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] HikariPool-5 - Shutdown initiated...
+2023-09-27 09:22:04,427 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] HikariPool-5 - Shutdown completed.
+2023-09-27 09:22:04,482 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:22:04,482 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:22:04,570 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:22:04,570 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:22:04,575 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:22:04,585 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:22:04,586 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:22:04,587 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Starting...
+2023-09-27 09:22:04,598 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bd50773
+2023-09-27 09:22:04,598 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
+2023-09-27 09:22:04,602 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:22:04,614 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:22:04,686 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.212 seconds (process running for 463.781)
+2023-09-27 09:22:11,444 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:22:41,468 INFO org.apache.catalina.core.StandardService [Thread-23] Stopping service [Tomcat]
+2023-09-27 09:22:41,479 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-23] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:22:41,487 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] HikariPool-6 - Shutdown initiated...
+2023-09-27 09:22:41,491 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] HikariPool-6 - Shutdown completed.
+2023-09-27 09:22:41,549 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:22:41,549 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:22:41,634 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:22:41,634 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:22:41,639 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:22:41,649 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:22:41,651 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:22:41,651 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Starting...
+2023-09-27 09:22:41,660 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@407520ff
+2023-09-27 09:22:41,661 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Start completed.
+2023-09-27 09:22:41,664 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:22:41,681 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:22:41,735 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.194 seconds (process running for 500.831)
+2023-09-27 09:22:45,896 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:23:38,666 INFO org.apache.catalina.core.StandardService [Thread-27] Stopping service [Tomcat]
+2023-09-27 09:23:38,668 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-27] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:23:38,697 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] HikariPool-7 - Shutdown initiated...
+2023-09-27 09:23:38,714 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] HikariPool-7 - Shutdown completed.
+2023-09-27 09:23:38,774 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:23:38,774 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:23:38,862 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:23:38,862 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:23:38,866 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:23:38,878 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:23:38,880 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:23:38,880 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Starting...
+2023-09-27 09:23:38,890 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@129685e3
+2023-09-27 09:23:38,890 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Start completed.
+2023-09-27 09:23:38,894 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:23:38,907 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:23:38,970 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.206 seconds (process running for 558.068)
+2023-09-27 09:23:42,017 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:23:49,556 INFO org.apache.catalina.core.StandardService [Thread-31] Stopping service [Tomcat]
+2023-09-27 09:23:49,558 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-31] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:23:49,570 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] HikariPool-8 - Shutdown initiated...
+2023-09-27 09:23:49,602 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] HikariPool-8 - Shutdown completed.
+2023-09-27 09:23:49,663 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:23:49,664 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:23:49,749 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:23:49,749 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:23:49,754 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:23:49,763 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:23:49,764 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:23:49,765 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Starting...
+2023-09-27 09:23:49,774 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31809d0
+2023-09-27 09:23:49,774 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Start completed.
+2023-09-27 09:23:49,777 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:23:49,808 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:23:49,883 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.227 seconds (process running for 568.981)
+2023-09-27 09:30:19,773 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:31:30,648 INFO org.apache.catalina.core.StandardService [Thread-35] Stopping service [Tomcat]
+2023-09-27 09:31:30,650 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-35] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:31:30,663 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] HikariPool-9 - Shutdown initiated...
+2023-09-27 09:31:30,704 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] HikariPool-9 - Shutdown completed.
+2023-09-27 09:31:30,778 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:31:30,778 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:31:30,878 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:31:30,878 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:31:30,886 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:31:30,909 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:31:30,910 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:31:30,911 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Starting...
+2023-09-27 09:31:30,960 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d694833
+2023-09-27 09:31:30,961 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Start completed.
+2023-09-27 09:31:30,965 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:31:30,982 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:31:31,168 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.398 seconds (process running for 1030.28)
+2023-09-27 09:31:35,030 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:31:51,758 INFO org.apache.catalina.core.StandardService [Thread-39] Stopping service [Tomcat]
+2023-09-27 09:31:51,760 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-39] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:31:51,780 INFO com.zaxxer.hikari.HikariDataSource [Thread-39] HikariPool-10 - Shutdown initiated...
+2023-09-27 09:31:51,798 INFO com.zaxxer.hikari.HikariDataSource [Thread-39] HikariPool-10 - Shutdown completed.
+2023-09-27 09:31:51,858 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:31:51,858 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:31:51,949 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:31:51,949 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:31:51,953 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:31:51,966 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:31:51,967 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:31:51,968 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Starting...
+2023-09-27 09:31:52,002 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d8b5991
+2023-09-27 09:31:52,002 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Start completed.
+2023-09-27 09:31:52,006 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:31:52,020 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:31:52,069 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.222 seconds (process running for 1051.182)
+2023-09-27 09:31:55,292 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:38:16,983 INFO org.apache.catalina.core.StandardService [Thread-43] Stopping service [Tomcat]
+2023-09-27 09:38:16,990 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-43] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:38:17,003 INFO com.zaxxer.hikari.HikariDataSource [Thread-43] HikariPool-11 - Shutdown initiated...
+2023-09-27 09:38:17,010 INFO com.zaxxer.hikari.HikariDataSource [Thread-43] HikariPool-11 - Shutdown completed.
+2023-09-27 09:38:17,079 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:38:17,079 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:38:17,162 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:38:17,162 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:38:17,166 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:38:17,175 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:38:17,177 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:17,177 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-12 - Starting...
+2023-09-27 09:38:17,216 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35f2f793
+2023-09-27 09:38:17,216 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-12 - Start completed.
+2023-09-27 09:38:17,220 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:17,232 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:38:17,309 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.238 seconds (process running for 1436.444)
+2023-09-27 09:38:20,759 INFO org.apache.catalina.core.StandardService [Thread-47] Stopping service [Tomcat]
+2023-09-27 09:38:20,770 INFO com.zaxxer.hikari.HikariDataSource [Thread-47] HikariPool-12 - Shutdown initiated...
+2023-09-27 09:38:20,794 INFO com.zaxxer.hikari.HikariDataSource [Thread-47] HikariPool-12 - Shutdown completed.
+2023-09-27 09:38:20,854 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:38:20,854 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:38:20,932 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:38:20,932 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:38:20,936 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:38:20,947 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:38:20,949 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:20,949 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-13 - Starting...
+2023-09-27 09:38:20,971 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2880c095
+2023-09-27 09:38:20,971 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-13 - Start completed.
+2023-09-27 09:38:20,976 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:20,989 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:38:21,039 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.192 seconds (process running for 1440.173)
+2023-09-27 09:38:30,894 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:38:42,685 INFO org.apache.catalina.core.StandardService [Thread-51] Stopping service [Tomcat]
+2023-09-27 09:38:42,689 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-51] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27 09:38:42,700 INFO com.zaxxer.hikari.HikariDataSource [Thread-51] HikariPool-13 - Shutdown initiated...
+2023-09-27 09:38:42,718 INFO com.zaxxer.hikari.HikariDataSource [Thread-51] HikariPool-13 - Shutdown completed.
+2023-09-27 09:38:42,804 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:38:42,804 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:38:42,887 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:38:42,888 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:38:42,892 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:38:42,901 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:38:42,903 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:42,903 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-14 - Starting...
+2023-09-27 09:38:42,912 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@316ab124
+2023-09-27 09:38:42,912 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-14 - Start completed.
+2023-09-27 09:38:42,915 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:42,927 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:38:42,979 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.183 seconds (process running for 1462.115)
+2023-09-27 09:38:46,427 INFO org.apache.catalina.core.StandardService [Thread-55] Stopping service [Tomcat]
+2023-09-27 09:38:46,438 INFO com.zaxxer.hikari.HikariDataSource [Thread-55] HikariPool-14 - Shutdown initiated...
+2023-09-27 09:38:46,462 INFO com.zaxxer.hikari.HikariDataSource [Thread-55] HikariPool-14 - Shutdown completed.
+2023-09-27 09:38:46,546 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Starting EmployeeApplication using Java 20.0.1 with PID 5269 (/Users/jackboswell/Documents/_code/projects/employee-api/employee/target/classes started by jackboswell in /Users/jackboswell/Documents/_code/projects/employee-api/employee)
+2023-09-27 09:38:46,546 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:38:46,607 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-09-27 09:38:46,607 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-27 09:38:46,612 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-09-27 09:38:46,621 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:38:46,623 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:46,623 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-15 - Starting...
+2023-09-27 09:38:46,632 INFO com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24a1640d
+2023-09-27 09:38:46,632 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-15 - Start completed.
+2023-09-27 09:38:46,636 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:38:46,647 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:38:46,714 INFO com.employeecreator.employee.EmployeeApplication [restartedMain] Started EmployeeApplication in 0.177 seconds (process running for 1465.85)
+2023-09-27 09:38:52,910 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'

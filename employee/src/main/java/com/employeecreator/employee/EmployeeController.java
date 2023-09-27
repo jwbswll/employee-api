@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.employeecreator.employee.exceptions.NotFoundException;
@@ -18,6 +19,7 @@ import com.employeecreator.employee.exceptions.NotFoundException;
 import jakarta.validation.Valid;
 
 @RestController
+@RequestMapping("/employees")
 public class EmployeeController {
   private EmployeeService service;
 
@@ -25,12 +27,12 @@ public class EmployeeController {
     this.service = service;
   }
 
-  @GetMapping("/employees")
+  @GetMapping("/")
   List<Employee> all() {
     return this.service.getAll();
   }
 
-  @GetMapping("/employees/{id}")
+  @GetMapping("/{id}")
   ResponseEntity<Employee> findById(@PathVariable("id") Long id) throws Exception {
     Optional<Employee> maybeEmployee = this.service.getById(id);
     if (maybeEmployee.isEmpty()) {
@@ -39,7 +41,7 @@ public class EmployeeController {
     return new ResponseEntity<Employee>(maybeEmployee.get(), null, HttpStatus.OK);
   }
 
-  @PostMapping("/employees")
+  @PostMapping("/")
   ResponseEntity<Employee> add(@RequestBody @Valid CreateEmployeeDTO data) {
     Optional<Employee> maybeEmployee = this.service.add(data);
     if (maybeEmployee.isEmpty()) {
@@ -49,7 +51,7 @@ public class EmployeeController {
     }
   }
 
-  @PatchMapping("/employees/{id}")
+  @PatchMapping("/{id}")
   ResponseEntity<Employee> updateById(@PathVariable("id") Long id, @RequestBody @Valid UpdateEmployeeDTO data) {
     Optional<Employee> maybeUpdated = this.service.updateById(id, data);
     if (maybeUpdated.isEmpty()) {
@@ -58,7 +60,7 @@ public class EmployeeController {
     return new ResponseEntity<Employee>(maybeUpdated.get(), null, HttpStatus.OK);
   }
 
-  @DeleteMapping("/employees/{id}")
+  @DeleteMapping("/{id}")
   ResponseEntity<String> deleteById(@PathVariable("id") Long id) {
     boolean result = this.service.deleteById(id);
     if (!result) {
